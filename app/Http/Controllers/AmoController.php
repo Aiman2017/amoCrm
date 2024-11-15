@@ -12,8 +12,8 @@ use Symfony\Component\HttpFoundation\Response;
 
 class AmoController extends Controller
 {
-    public $accessToken;
-    public $baseUrl;
+    private $accessToken;
+    private $baseUrl;
     public function __construct()
     {
         $this->accessToken = config('amocrm.access_token');
